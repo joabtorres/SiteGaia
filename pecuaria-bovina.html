@@ -7,6 +7,7 @@
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/bootstrap-theme.min.css">
     <link rel="stylesheet" type="text/css" href="css/themplete.css" media="all">
+    <link rel="stylesheet" href="css/categoria.css">
 </head>
 <body>
 	<nav class="navbar navbar-inverse" role="navigation">
@@ -22,8 +23,8 @@
 			</div>
 			<div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
 				<ul class="nav navbar-nav" id="menu">
-					<li class="ativo"><a href="index.html">Home</a></li>
-					<li><a href="portfolio.html">Portfólio</a></li>
+					<li><a href="index.html">Home</a></li>
+					<li class="ativo"><a href="portfolio.html">Portfólio</a></li>
 					<li><a href="blog.html">Blog</a></li>
 					<li><a href="contato.html">Contato</a></li>
 				</ul>
@@ -33,56 +34,31 @@
 
 	<section class="container-fluid">
 		
-		<!--SLIDE SHOW-->
-		<div class="row">
+		<!--PORTIFOLIO-->
+<div class="row">
 			<div class="col-xs-12">
-				<div id="slide-show" class="carousel slide" data-ride="carousel">
-					<ol class="carousel-indicators">
-						<li data-target="#slide-show" data-slide-to="0" class="active"></li>
-						<li data-target="#slide-show" data-slide-to="1"></li>
-						<li data-target="#slide-show" data-slide-to="2"></li>
-						<li data-target="#slide-show" data-slide-to="3"></li>
-					</ol>
+			<ol class="breadcrumb">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="portfolio.html">Portifólio</a></li>
+				<li><a href="pecuaria-bovina.html">Pecuária Bovina</a></li>
+			</ol>
+			<h2 class="text-center">Pecuária Bovina</h2>
+			<div class="row">
+				<div class="col-sm-12 col-md-12">
+					<p class="text-center"><img data-src="holder.js/1200x250" class="img-radius" alt="Pecuária Bovina"></p>
+					<p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis, eaque, officia, dolor expedita delectus veniam dolores soluta alias pariatur voluptates neque aperiam doloremque quos recusandae fugiat perferendis impedit iste a.</p>
+					<p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus, sit, nesciunt nemo facilis ad vitae voluptate nam officia. Et, molestias saepe impedit a perspiciatis enim non veritatis soluta eligendi ratione.</p>
 
-					<div class="carousel-inner">
-						<div class="item active">
-							<img data-src="holder.js/100%x400" alt="">
-							<div class="carousel-caption">
-					            <h3>Primeiro Slide</h3>
-					            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-				          	</div>
-						</div>
-						<div class="item">
-							<img data-src="holder.js/100%x400" alt="">
-							<div class="carousel-caption">
-					            <h3>Segundo Slide</h3>
-					            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-				          	</div>
-						</div>
-						<div class="item">
-							<img data-src="holder.js/100%x400" alt="">
-							<div class="carousel-caption">
-					            <h3>Terceiro Slide</h3>
-					            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-				          	</div>
-						</div>
-						<div class="item">
-							<img data-src="holder.js/100%x400" alt="">
-							<div class="carousel-caption">
-					            <h3>Quarto Slide</h3>
-					            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-				          	</div>
-						</div>
-					</div>
-
-					<!--CONTROLES-->
-					  <a class="left carousel-control" href="#slide-show" data-slide="prev">
-				        <span class="glyphicon glyphicon-chevron-left"></span>
-				      </a>
-				      <a class="right carousel-control" href="#slide-show" data-slide="next">
-				        <span class="glyphicon glyphicon-chevron-right"></span>
-				      </a>
+					<h2>Empreendimentos que obtiveram sucesso:</h2>
+					<ul class="categoria-empreendimento">
+						<li><a href="portfolio/empreendimento-1.html">Empreendimento 1</a></li>
+						<li><a href="portfolio/empreendimento-1.html">Empreendimento 2</a></li>
+						<li><a href="portfolio/empreendimento-1.html">Empreendimento 3</a></li>
+						<li><a href="portfolio/empreendimento-1.html">Empreendimento 4</a></li>
+					</ul>
 				</div>
+			</div>
+
 			</div>
 		</div>
 		<!--RODAPE-->
@@ -109,7 +85,6 @@
 	</section>
 	<script type="text/javascript" src="js/holder.js"></script>
 	<script type="text/javascript" src="http://code.jquery.com/jquery.js"></script>
-	
 	<script src="js/bootstrap.min.js"></script>
 </body>
 </html>

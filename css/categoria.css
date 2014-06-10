@@ -1,0 +1,25 @@
+@charset "utf-8";
+img.img-radius{
+-moz-border-radius:50px ;
+-webkit-border-radius:50px ;
+border-radius:50px ;
+}
+ul.categoria-empreendimento li a {
+	font-size: 16pt;
+	font-style: italic;
+	color:#00B22D;
+}
+
+/****************
+EMPREENDIMENTO
+*****************/
+div.testmunha{
+	float: left;
+	background: #FF2626;
+	-moz-border-radius:50px ;
+	-webkit-border-radius:50px ;
+	border-radius:50px ;
+	padding: 20px 25px;
+	margin: 20px auto;
+	color:white;
+}
