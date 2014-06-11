@@ -9,7 +9,10 @@ ul.categoria-empreendimento li a {
 	font-style: italic;
 	color:#00B22D;
 }
-
+ul.lista-categoria li{
+	font-size: 12pt;
+	font-style: italic;
+}
 /****************
 EMPREENDIMENTO
 *****************/
