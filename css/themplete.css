@@ -3,15 +3,21 @@
 	font-family:'aardvark';
 	src: url(../fonts/aardc____0.ttf);	
 }
+@font-face{
+	font-family:'Lobster-Regular';
+	src: url(../fonts/Lobster-Regular.ttf);	
+}
 p{
 	font-size: 14pt;
 }
-/***********************************
-TRABALHAND COM MENU:
-***********************************/
-
+/*Menu*/
+.navbar-inverse{
+background: url(../_imagens/fundo-menu.png) no-repeat;
+background-repeat: repeat-x;
+background-size: auto 100%;
+border-color: transparent;
+}
 @media only screen and (min-width: 768px){
-
 	ul#menu li{
 	padding-top:25px;
 	margin-left: 2px;
@@ -19,7 +25,10 @@ TRABALHAND COM MENU:
 	padding-bottom:10px;
 	margin-bottom: 10px;
 	border-radius: 0 0 40px 40px;
+	-moz-border-radius: 0 0 40px 40px;
+	-webkit-border-radius: 0 0 40px 40px;
 	-webkit-transition: background 0.8s;
+	-moz-transition: background 0.8s;
 	}
 }
 h2.logo-marca{margin: 3px}
@@ -27,46 +36,103 @@ ul#menu li.ativo{
 	background: #00B22D;
 }
 ul#menu li a{
+	font-family: "Lobster-Regular";
 	color: white;
+	padding: 10px 8px;
 }
 ul#menu li:hover{
-	opacity: 0.7;
-	background: #00B22D;
+	background-color: rgba(0,178,45,0.6);
 }
 /******************************
 		SLIDE
 ******************************/
 div.carousel-caption{
-	background: rgba(0,0,0,.1);
+	background: rgba(0,0,0,.4);
 }
+#slide-show{
+	margin-top:-15px;
+	margin-bottom: 10px;
+}
+
 /***********************************
-			TRABALHAND COM RODAPE:
+TRABALHAND COM RODAPE:
 ***********************************/
 div#rodape{
 	background: #FF2626;
-	
-	margin-top: 20px;
-	border-radius: 40px 40px 0 0; 
 	color: white;
 }
 div#rodape h2{
-	font-size: 20pt;
+	font-size: 1.5em;
 	font-weight: 700;
 }
 div#rodape p{
-	font-size: 14pt;
+	font-size: 1em;
 }
 div#rodape a{
 	color: white;
 }
-@media only screen and (min-width: 500px) and (max-width: 800px){
-	div.parte-dir{
-		margin-left: -40px;
-	}
+#rodape2 {
+	padding: 1em;
+	background-color: #cecece;
+	font-size: 1em;
 }
-@media only screen and (max-width: 480px){
-	div.parte-dir{
-		display: none;
-		opacity: 0;
-	}
+#rodape2 strong a{
+	color: black;
+}
+/*diversos*/
+.title-pagina{
+	font-size: 2.5em
+}
+.breadcrumb{color: #999;}
+.breadcrumb a{
+	color: #000;
+	font-weight:700;	
+}
+h1,h2,h3,h4,h5,h6{
+	font-family: "Lobster-Regular";
+}
+/*portfólio*/
+
+.thumbnail{
+	border: none;
+}
+.thumbnail:hover{
+	transform: scale(1.1);
+	-webkit-transform: scale(1.1);
+}
+.thumbnail a:hover{
+	text-decoration: none;
+}
+.thumbnail .caption h3{
+	color: rgb(166,0,0);
+	margin-top: 0;
+	font-size: 2em;
+}
+/*categoria do portfolio*/
+.container-categoria{
+	padding: 0 10px;
+}
+.container-categoria h2{
+	font-size: 3em;
+}
+.container-categoria p{
+	font-size: 1.1em;
+}.container-categoria ul li{
+	font-size: 1.1em;
+	text-align: justify;
+}
+img.img-radius{
+-moz-border-radius:20px ;
+-webkit-border-radius:20px ;
+border-radius:20px ;
+width: 100%;
+}
+
+/*contato*/
+
+textarea#cMensagem{
+	height: 100%;
+	width: 100%;
+	max-height:200px; 
+	max-width: 100%;
 }
