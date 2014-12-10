@@ -82,7 +82,7 @@ add_filter( 'excerpt_length', 'foghorn_excerpt_length' );
  */
  
 function foghorn_continue_reading_link() {
-	return ' <a href="'. get_permalink() . '">' . __( 'Continue reading <span class="meta-nav">&rarr;</span>', 'foghorn' ) . '</a>';
+	return ' <a href="'. get_permalink() . '">' . __( 'Continue lendo <span class="meta-nav">&rarr;</span>', 'foghorn' ) . '</a>';
 }
 
 /**

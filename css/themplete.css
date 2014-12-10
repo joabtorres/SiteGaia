@@ -31,7 +31,7 @@ border-color: transparent;
 	-moz-transition: background 0.8s;
 	}
 }
-h2.logo-marca{margin: 3px}
+h2.logo-marca{margin: 3px; float: left;}
 ul#menu li.ativo{
 	background: #00B22D;
 }
@@ -58,12 +58,17 @@ div.carousel-caption{
 TRABALHAND COM RODAPE:
 ***********************************/
 div#rodape{
-	background: #FF2626;
+	background: #F56262;
+	color: white;
+	padding: 0;
+}
+div#rodape *{
 	color: white;
 }
 div#rodape h2{
 	font-size: 1.5em;
 	font-weight: 700;
+	color: white;
 }
 div#rodape p{
 	font-size: 1em;
@@ -71,17 +76,10 @@ div#rodape p{
 div#rodape a{
 	color: white;
 }
-#rodape2 {
-	padding: 1em;
-	background-color: #cecece;
-	font-size: 1em;
-}
-#rodape2 strong a{
-	color: black;
-}
 /*diversos*/
 .title-pagina{
-	font-size: 2.5em
+	font-size: 2.5em:;
+	color: #22AE24;
 }
 .breadcrumb{color: #999;}
 .breadcrumb a{
@@ -104,7 +102,7 @@ h1,h2,h3,h4,h5,h6{
 	text-decoration: none;
 }
 .thumbnail .caption h3{
-	color: rgb(166,0,0);
+	color: rgb(52, 168, 76);
 	margin-top: 0;
 	font-size: 2em;
 }
@@ -114,6 +112,7 @@ h1,h2,h3,h4,h5,h6{
 }
 .container-categoria h2{
 	font-size: 3em;
+	color: rgb(52, 168, 76);
 }
 .container-categoria p{
 	font-size: 1.1em;

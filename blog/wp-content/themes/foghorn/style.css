@@ -235,8 +235,8 @@ body {
 }
 #page {
 	margin: 0 auto;
-	padding: 0 2em;
-	max-width: 1110px;
+	padding: 0 0;
+	max-width: 1200px;
 }
 #main {
 	clear: both;
@@ -257,7 +257,7 @@ body {
 	float: right;
 }
 .single .hentry {
-	width:73%;
+	width:80%;
 	float:right;
 }
 .post-wrap {

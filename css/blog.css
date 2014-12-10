@@ -1,0 +1,56 @@
+a{
+	color: black;
+}
+a:hover{
+	color: black;
+	font-weight: 700;
+}
+.breadcrumb a:hover{
+	color: #000;
+	font-weight:700;	
+}
+/*aside*/
+.widget{
+	padding: 0;
+
+}
+.widget .widget-title{
+	padding: 5px 10px;
+	font-size: 1.3em;
+	font-family: "Verdana" sans-serif;
+	color: #F56262;
+	text-shadow: 0 1px rgba(255, 255, 255, 0.8);
+	background-color: #ccc;
+	width: 100%;
+}.widget ul{
+	padding: 5px 10px;
+}
+.widget ul li{
+text-align: left;
+font-size: 1em;
+}
+.widget ul li::before{
+	content:"- ";
+}
+/*titulo do post*/
+h1.entry-title a{
+color: #F56262;
+}h1.entry-title a:hover{
+	color: #DB4F4F;
+	font-weight: 700;
+}
+/*tags*/
+.tagcloud a{
+font-size: 1em;
+}
+.tagcloud a::before{
+	content: "#"
+}
+/*post*/
+.page-title{
+	font-family: Arial;
+}
+.navbar-inverse{
+	top: 0;
+	clear: both;
+}

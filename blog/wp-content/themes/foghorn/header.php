@@ -8,33 +8,14 @@
 <head>
 <meta charset="<?php bloginfo( 'charset' ); ?>" />
 <meta name="viewport" content="width=device-width" />
-<title><?php
-	/*
-	 * Print the <title> tag based on what is being viewed.
-	 */
-	global $page, $paged;
-
-	wp_title( '|', true, 'right' );
-
-	// Add the blog name.
-	bloginfo( 'name' );
-
-	// Add the blog description for the home/front page.
-	$site_description = get_bloginfo( 'description', 'display' );
-	if ( $site_description && ( is_home() || is_front_page() ) )
-		echo " | $site_description";
-
-	// Add a page number if necessary:
-	if ( $paged >= 2 || $page >= 2 )
-		echo ' | ' . sprintf( __( 'Page %s', 'foghorn' ), max( $paged, $page ) );
-
-	?></title>
+<title>Carlos Gaia</title>
 <link rel="profile" href="http://gmpg.org/xfn/11" />
 <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
-<!--[if lt IE 9]>
-<script src="<?php echo get_template_directory_uri(); ?>/js/html5.js" type="text/javascript"></script>
-<![endif]-->
+	<link rel="stylesheet" href="../css/bootstrap.min.css">
+	<link rel="stylesheet" href="../css/bootstrap-theme.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/themplete.css" media="all">
+    <link rel="stylesheet" href="../css/blog.css">
 <?php
 	/* We add some JavaScript to pages with the comment form
 	 * to support sites with threaded comments (when in use).
@@ -49,32 +30,52 @@
 	 */
 	wp_head();
 ?>
+
 </head>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v2.0";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
 
 <body <?php body_class(); ?>>
+	<nav class="navbar navbar-inverse" role="navigation">
+		<div class="container-fluid">
+			<h2 class="logo-marca text-left "><a href="../index.html"><img src="../_imagens/logo.png"alt="Logo do Carlos Gaia" class="hidden-xs"><img src="../_imagens/logo2.png"alt="Logo do Carlos Gaia" class="visible-xs"></a></h2>
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				</div>
+			<div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
+				<ul class="nav navbar-nav" id="menu">
+					<li><a href="../index.html">Home</a></li>
+					<li ><a href="../portfolio.html">Portfólio</a></li>
+					<li class="ativo"><a href="index.php">Blog</a></li>
+					<li><a href="../contato.html">Contato</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<section class="container-fluid">
+		
+		<!--PORTIFOLIO-->
+		<div  class="container-categoria">
+			<div class="row">
+			<div class="col-xs-12">
+			<ol class="breadcrumb">
+				<li><a href="../index.html">Home</a></li>
+				<li><a href="index.php">Blog</a></li>
+			</ol>
+
+
 <div id="page" class="hfeed">
-	<header id="branding" role="banner" class="clearfix">
-			<hgroup>
-				<h1 id="site-title"><span><a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
-				<?php if ( of_get_option('logo', false) ) { ?>
-					<img src="<?php echo of_get_option('logo'); ?>" alt="<?php bloginfo( 'name' ) ?>" />
-				<?php } else {
-					bloginfo( 'name' );
-				}?>
-				</a></span></h1>
-                <?php if ( of_get_option('tagline',false) ) { ?>
-					<h2 id="site-description"><?php bloginfo( 'description' ); ?></h2>
-                <?php } ?>
-			</hgroup>
-
-			<nav id="access" role="navigation">
-				<h1 class="section-heading"><?php _e( 'Main menu', 'foghorn' ); ?></h1>
-				<?php /*  Allow screen readers / text browsers to skip the navigation menu and get right to the good stuff. */ ?>
-				<div class="skip-link screen-reader-text"><a href="#content" title="<?php esc_attr_e( 'Skip to content', 'foghorn' ); ?>"><?php _e( 'Skip to content', 'foghorn' ); ?></a></div>
-				<?php /* Our navigation menu.  If one isn't filled out, wp_nav_menu falls back to wp_page_menu. The menu assiged to the primary position is the one used. If none is assigned, the menu with the lowest ID is used. */ ?>
-				<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
-			</nav><!-- #access -->
-	</header><!-- #branding -->
-
 
 	<div id="main" class="clearfix">
