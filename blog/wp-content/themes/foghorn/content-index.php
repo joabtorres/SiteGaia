@@ -57,7 +57,7 @@
 			<?php endif; // End if $show_sep ?>
 			<span class="leave-reply"><?php comments_popup_link( __( '<span class="reply">Reply</span>', 'foghorn' ), __( '<span class="reply">Replies:</span> 1', 'foghorn' ), __( '<span class="reply">Replies:</span> %', 'foghorn' ) ); ?></span>
 			<?php endif; // End if comments_open() ?>
-			<?php edit_post_link( __( 'Edit', 'foghorn' ), '<span class="sep"> | </span><span class="edit-link">', '</span>' ); ?>
+			<?php edit_post_link( __( 'Editar', 'foghorn' ), '<span class="sep"> | </span><span class="edit-link">', '</span>' ); ?>
 		</footer><!-- #entry-meta -->
         </div>
 	</article><!-- #post-<?php the_ID(); ?> -->

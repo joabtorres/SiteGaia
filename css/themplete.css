@@ -81,9 +81,12 @@ div#rodape a{
 	font-size: 2.5em:;
 	color: #22AE24;
 }
-.breadcrumb{color: #999;}
+.breadcrumb{
+	background-color: rgba(245, 98, 98, 0.8);
+	color: #999;
+}
 .breadcrumb a{
-	color: #000;
+	color: white;
 	font-weight:700;	
 }
 h1,h2,h3,h4,h5,h6{

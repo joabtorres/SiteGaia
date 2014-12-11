@@ -32,7 +32,8 @@
 ?>
 
 </head>
-<div id="fb-root"></div>
+<body <?php body_class(); ?>>
+	<div id="fb-root"></div>
 <script>(function(d, s, id) {
   var js, fjs = d.getElementsByTagName(s)[0];
   if (d.getElementById(id)) return;
@@ -41,7 +42,6 @@
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
 
-<body <?php body_class(); ?>>
 	<nav class="navbar navbar-inverse" role="navigation">
 		<div class="container-fluid">
 			<h2 class="logo-marca text-left "><a href="../index.html"><img src="../_imagens/logo.png"alt="Logo do Carlos Gaia" class="hidden-xs"><img src="../_imagens/logo2.png"alt="Logo do Carlos Gaia" class="visible-xs"></a></h2>
