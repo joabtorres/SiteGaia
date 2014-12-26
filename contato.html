@@ -12,12 +12,12 @@
 	<nav class="navbar navbar-inverse" role="navigation">
 		<div class="container-fluid">
 			<div class="navbar-header">
-				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+				<input type="input" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
 					<span class="sr-only">Toggle navigation</span>
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
-				</button>
+				</input>
 				<h2 class="logo-marca text-left "><a href="index.html"><img src="_imagens/logo.png"alt="Logo do Carlos Gaia" class="hidden-xs"><img src="_imagens/logo2.png"alt="Logo do Carlos Gaia" class="visible-xs"></a></h2>
 			</div>
 			<div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
@@ -44,29 +44,29 @@
 			<div class="row">
 				<div class="col-sm-6 col-md-6">
 					<h2 class="text-center title-pagina">Contato</h2>
-					<form action="" class="form">
+					<form action="complementos/form-contato.php" class="form" method="post">
 						<div class="form-group">
 							<label for="cNome">Nome:</label>
 							<input type="text" class="col-xs-12" name="tNome" id="cNome" placeholder="Informe seu nome completo">
 						</div>
 						<div class="form-group">
 							<label for="cEmail">E-mail:</label>
-							<input type="email" class="col-xs-12" name="tEmail" id="cEmail" placeholder="Informe seu e-mail" >
+							<input type="email" class="col-xs-12" name="tEmail" id="cEmail" placeholder="Informe seu e-mail" required="Informe seu e-mail">
 						</div>
 						<div class="form-group">
 							<label for="cTelefone">Telefone:</label>
-							<input type="tel" class="col-xs-12" name="tTelefone" id="cTelefone" placeholder="(99) 99999-9999" >
+							<input type="tel" class="col-xs-12" name="tTelefone" id="cTelefone" placeholder="(99) 99999-9999" maxlength="15">
 						</div>
 						<div class="form-group">
 							<label for="cAssunto">Assunto:</label>
 							<input type="text" class="col-xs-12" name="tAssunto" id="cAssunto" placeholder="Informe o assunto">
 						</div>
 						<div class="form-group">
-							<label for="cMenssagem">Mensagem:</label>
-						<textarea class="form-control" rows="4" id="cMensagem" placeholder="Mensagem ..."></textarea>
+							<label for="cMensagem">Mensagem:</label>
+						<textarea class="form-control" rows="4" id="cMensagem" name="tMensagem" placeholder="Mensagem ..."></textarea>
 						</div>
-						<p class="text-center"><button type="button" class="btn btn-success ">Enviar</button> 
-							<button type="button" class="btn btn-danger ">Cancelar</button></p>
+						<p class="text-center"><input type="submit" name="enviar" class="btn btn-success" value="Enviar" >
+							<input type="submit" class="btn btn-danger" value="Cancelar"></p>
 					</form>
 				</div>
 

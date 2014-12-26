@@ -1,1 +1,0 @@
-jQuery('.tooltip-toggle').tooltip();

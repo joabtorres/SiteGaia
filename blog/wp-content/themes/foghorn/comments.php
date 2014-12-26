@@ -14,5 +14,5 @@
 ?>
 
 	<div id="comments">
-		<div class="fb-comments" data-href="http://localhost/git/SiteGaia/blog/<?p=<?php the_ID(); ?>" data-width="100%" data-numposts="5" data-colorscheme="light"></div>
+		<div class="fb-comments" data-href="http://localhost/git/SiteGaia/blog/?p=<?php the_ID(); ?>" data-width="100%" data-numposts="5" data-colorscheme="light"></div>
 	</div><!-- #comments -->

@@ -1,3 +1,14 @@
+<?php
+/**
+ * The Header for our theme.
+ *
+ * Displays all of the <head> section and everything up till <div id="main">
+ *
+ * @package WordPress
+ * @subpackage Foghorn
+ * @since Foghorn 0.1
+ */
+?>
 <!DOCTYPE html>
 <!--[if lt IE 9]>
 <html id="ie" <?php language_attributes(); ?>>
